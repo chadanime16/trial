@@ -2,15 +2,13 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/x-icon"
-        href="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/static/img/favicon.ico">
-    <title>Watch {{ TITLE }} - Chadanime</title>
+    <title>Watch {{ title }} - Chadanime</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="title" content="Watch {{ TITLE }} - AnimeDex">
+    <meta name="title" content="Watch {{ title }} - Chadanime">
     <meta name="description"
-        content="Watch {{ TITLE }} free anime online and it's latest episodes on AnimeDex. We provide free anime online experience without ads, signing up or downloading.">
+        content="Watch {{ title }} free anime online and it's latest episodes on Chadanime. We provide free anime online experience without ads, signing up or downloading.">
     <meta name="keywords"
-        content="{{ TITLE }},animedex, anime dex, hindi dub, hindi sub, english dub, watch anime online, free anime, anime stream, anime hd, english sub, kissanime, gogoanime, animeultima, 9anime, 123animes, animefreak, vidstreaming, gogo-stream, animekisa, zoro.to, gogoanime.run, animefrenzy, animekisa">
+        content="anime dex, hindi dub, hindi sub, english dub, watch anime online, free anime, anime stream, anime hd, english sub, kissanime, gogoanime, animeultima, 9anime, 123animes, animefreak, vidstreaming, gogo-stream, animekisa, zoro.to, gogoanime.run, animefrenzy, animekisa">
     <meta name="charset" content="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="robots" content="index, follow">
@@ -18,32 +16,32 @@
     <meta name="revisit-after" content="1 days">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Language" content="en">
-    <meta property="og:title" content="Watch {{ TITLE }} - AnimeDex">
+    <meta property="og:title" content="Watch {{ title }} - AnimeDex">
     <meta property="og:description"
-        content="Watch {{ TITLE }} free anime online and it's latest episodes on AnimeDex. We provide free anime online experience without ads, signing up or downloading.">
+        content="Watch {{ title }} free anime online and it's latest episodes on AnimeDex. We provide free anime online experience without ads, signing up or downloading.">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="AnimeDex">
-    <meta property="og:url" content="{{ URL }}">
-    <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/screenshots/home.jpeg">
-    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/screenshots/home.jpeg">
+    <meta property="og:url" content="{{ animeURL }}">
+    <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/static/img/home.png">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/static/img/home.png">
     <meta property="og:image:secure_url"
-        content="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/screenshots/home.jpeg">
+        content="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/static/img/home.png">
     <meta property="og:image:width" content="650">
     <meta property="og:image:height" content="350">
-    <meta property="twitter:title" content="Watch {{ TITLE }} - AnimeDex">
+    <meta property="twitter:title" content="Watch {{ title }} - AnimeDex">
     <meta property="twitter:description"
-        content="Watch {{ TITLE }} free anime online and it's latest episodes on AnimeDex. We provide free anime online experience without ads, signing up or downloading.">
-    <meta property="twitter:url" content="{{ URL }}">
+        content="Watch {{ title }} free anime online and it's latest episodes on AnimeDex. We provide free anime online experience without ads, signing up or downloading.">
+    <meta property="twitter:url" content="/anime/{{ aid }}">
     <meta property="twitter:card" content="summary">
     <meta name="apple-mobile-web-app-status-bar" content="#202125">
     <meta name="theme-color" content="#202125">
-    <link href="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/static/css/anime_min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all_min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/static/css/anime.min.css" rel="stylesheet">
 
     <style>
         #cover {
-            background-image: url('{{ IMG }}');
+            background-image: url('{{ img }}');
         }
     </style>
 </head>
@@ -51,8 +49,8 @@
 <body>
     <header id="head-div">
         <div id="title1">
-            <a href="/"><img src="https://cdn.jsdelivr.net/gh/TechShreyash/AnimeDex@main/static/img/header.png"
-                    alt="AnimeDex"></a>
+            <a href="/"><img src="https://i.ibb.co/ZBm3dfh/chadanime.png"
+                    alt="Chadanime"></a>
         </div>
         <div id="search-div">
             <form action="/search" method='GET'>
@@ -68,15 +66,15 @@
         </div>
         <div class="anime row">
             <div class="poster col-3">
-                <img src="{{ IMG }}">
+                <img src="{{ img }}">
             </div>
             <div class="details col-6">
-                <h1>{{ TITLE }}</h1>
+                <h1>{{ title }}</h1>
                 <div class="mid" style="margin: 20px 0px;">
                     <span class="cbox">HD</span>
-                    <span class="cbox">{{ LANG }}</span>
+                    <span class="cbox">{{ DUB }}</span>
                     <span class="dot"></span>
-                    <span class="year">{{ TYPE }}</span>
+                    <span class="year">{{ SEASON }}</span>
                 </div>
                 <div id="watchh" class="mid">
                     <a href="{{ WATCHNOW }}" class="watch-btn">
@@ -84,42 +82,42 @@
                     </a>
                 </div>
                 <div id="overview3" class="synopsis">
-                    SYNOPSIS
+                    SYNOP
                 </div>
             </div>
             <div id="info" class="col-3">
                 <div class="info-items overview">
                     <span id="overview2" class="item-head">Overview:</span>
-                    <span id="overview1" class="item-des">SYNOPSIS</span>
+                    <span id="overview1" class="item-des">SYNOP</span>
                 </div>
 
                 <div class=info-items>
                     <span class="item-head">Other Names:</span>
-                    <span class="item-des">{{ OTHER }}</span>
+                    <span class="item-des">{{ other }}</span>
                 </div>
                 <div class=info-items>
                     <span class="item-head">Episodes:</span>
-                    <span class="item-des">{{ TOTAL }}</span>
+                    <span class="item-des">{{ episodes }}</span>
                 </div>
                 <div class=info-items>
                     <span class="item-head">Release Year:</span>
-                    <span class="item-des">{{ YEAR }}</span>
+                    <span class="item-des">{{ year }}</span>
                 </div>
                 <div class=info-items>
                     <span class="item-head">Type:</span>
-                    <span class="item-des">{{ TYPE }}</span>
+                    <span class="item-des">{{ ATYPE }}</span>
                 </div>
                 <div class=info-items>
                     <span class="item-head">Status:</span>
-                    <span class="item-des">{{ STATUS }}</span>
+                    <span class="item-des">{{ status }}</span>
                 </div>
                 <div class=info-items>
                     <span class="item-head">Studios:</span>
-                    <span class="item-des">{{ STUDIO }}</span>
+                    <span class="item-des">{{ studios }}</span>
                 </div>
 
                 <div class="info-items genre">
-                    <span class="item-head">Genres:</span> GENERES
+                    <span class="item-head">Genres:</span> GENEROS
                 </div>
 
 
@@ -132,7 +130,7 @@
         <div class="divo">
             <h2>List Of Episodes:</h2>
             <div class="divo2">
-                EPISODES
+                EPISOS
             </div>
         </div>
 
@@ -142,6 +140,22 @@
         <div class="divox">
             <h2 id="latest">Similar Animes</h2>
             <div id="latest2">
+                <!-- <div class="poster la-anime">
+                    <div class="shadow">
+                        <div class="dubb">DUB</div>
+                        <div class="dubb dubb2">EP 13/13</div>
+                        <img src="https://gogocdn.net/cover/horimiya.png">
+                    </div>
+                    <div class="la-details">
+                        <h3>Horimiya (DUB)</h3>
+                        <span>TV Series</span>
+                        <span class="dot"></span>
+                        <span>Completed</span>
+                        <span class="dot"></span>
+                        <span>2021</span>
+                    </div>
+                </div> -->
+
                 DISPLAY_ANIME
             </div>
         </div>
@@ -149,8 +163,7 @@
     <hr>
     <footer>
         <div>
-            <a href="https://github.com/TechShreyash" target="_blank">MADE WITH <i class="fa fa-heart pulse"></i>BY TECH
-                SHREYASH</a> <a href="https://TechZBots.t.me" target="_blank">(@TechZBots)</a>
+            <a href="https://chadcinema.42web.io" target="_blank">MADE WITH <i class="fa fa-heart pulse"></i>BY Team Chadcinema</a> <a href="https://chadcinema.42web.io/motivation.html" target="_blank">Donate and Contact</a>
         </div>
     </footer>
     <hr>
@@ -160,15 +173,16 @@
             const imageObserver = new IntersectionObserver((entries, imgObserver) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        const lazyImage = entry.target;
-                        lazyImage.src = lazyImage.dataset.src;
+                        const lazyImage = entry.target
+                        console.log("lazy loading ", lazyImage)
+                        lazyImage.src = lazyImage.dataset.src
                     }
                 })
             });
-            const arr = document.querySelectorAll('img.lzy_img');
+            const arr = document.querySelectorAll('img.lzy_img')
             arr.forEach((v) => {
                 imageObserver.observe(v);
-            });
+            })
         })
     </script>
 </body>
